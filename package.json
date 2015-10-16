@@ -1,0 +1,21 @@
+{
+  "name": "daap",
+  "version": "1.0.0",
+  "description": "Encoder and Decoder for Digital Audio Access Protocol.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "daap"
+  ],
+  "author": "Kyle Welsby <kyle@mekyle.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "mocha": "^2.3.3"
+  }
+}
