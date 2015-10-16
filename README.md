@@ -12,8 +12,9 @@ to decode `application/x-dmap-tagged` requests commonly used with iTunes AirPlay
 ## Useage
 
 ```
+// Decode
 var http = require("http");
-var daap = require("daap");
+var daap = require("node-daap");
 
 http.createServer(function(req, res){
   if(req.getHeader('Content-Type') === "application/x-dmap-tagged"){
@@ -21,6 +22,34 @@ http.createServer(function(req, res){
     // { "minm": "Song for Someone", asar: "U2", ... }
   }
 }).listen(8000)
+```
+
+```
+// Encode
+var daap = require("node-daap");
+var name = daap.encode("minm", "Track Name");
+var artist = daap.encode("asar", "Artist");
+var daapInfo = daap.encodeList("mlit", name, artist);
+
+
+var content = `SET_PARAMETER * RTSP/1.0
+CSeq:2
+User-Agent: AirPlay/190.9
+Content-Type: application/x-dmap-tagged
+Content-Length: ${daapInfo.length}
+
+${daapInfo}`;
+
+/**
+SET_PARAMETER * RTSP/1.0
+CSeq:2
+User-Agent: AirPlay/190.9
+Content-Type: application/x-dmap-tagged
+Content-Length: 40
+
+mlit minm
+Track NameasarArtist
+*/
 ```
 
 ## License
