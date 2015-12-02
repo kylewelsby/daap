@@ -1,6 +1,6 @@
 {
   "name": "node-daap",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Encoder and Decoder for Digital Audio Access Protocol.",
   "main": "index.js",
   "directories": {
@@ -16,6 +16,15 @@
   "license": "ISC",
   "devDependencies": {
     "chai": "^3.3.0",
-    "mocha": "^2.3.3"
+    "mocha": "^2.3.3",
+    "standard": "^5.4.1"
+  },
+  "standard": {
+    "global": [
+      "describe",
+      "xdescribe",
+      "it",
+      "xit"
+    ]
   }
 }

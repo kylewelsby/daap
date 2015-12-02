@@ -1,500 +1,525 @@
 [
   {
-    "code":"mdcl",
-    "type":"list",
-    "name":"dmap.dictionary",
-    "description":"a dictionary entry"
+    "code": "abal",
+    "description": "  ",
+    "name": "daap.browsealbumlistung",
+    "type": "list"
   },
   {
-    "code":"mstt",
-    "type":"int",
-    "name":"dmap.status",
-    "description":"the response status code, these appear to be http status codes, e.g. 200"
+    "code": "abar",
+    "description": "",
+    "name": "daap.browseartistlisting   ",
+    "type": "list"
   },
   {
-    "code":"miid",
-    "type":"int",
-    "name":"dmap.itemid",
-    "description":"an item's id"
+    "code": "abcp",
+    "description": "",
+    "name": "daap.browsecomposerlisting",
+    "type": "list"
   },
   {
-    "code":"minm",
-    "type":"string",
-    "name":"dmap.itemname",
-    "description":"an items name"
+    "code": "abgn",
+    "description": "",
+    "name": "daap.browsegenrelisting",
+    "type": "list"
   },
   {
-    "code":"mikd",
-    "type":"byte",
-    "name":"dmap.itemkind",
-    "description":"the kind of item.  So far, only '2' has been seen, an audio file?"
+    "code": "abpl",
+    "description": "",
+    "name": "daap.baseplaylist",
+    "type": "byte"
   },
   {
-    "code":"mper",
-    "type":"long",
-    "name":"dmap.persistentid",
-    "description":"a persistent id"
+    "code": "abro",
+    "description": "",
+    "name": "daap.databasebrowse",
+    "type": "list"
   },
   {
-    "code":"mcon",
-    "type":"list",
-    "name":"dmap.container",
-    "description":"an arbitrary container"
+    "code": "adbs",
+    "description": "repsoonse to a /databases/id/items",
+    "name": "daap.databasesongs",
+    "type": "list"
   },
   {
-    "code":"mcti",
-    "type":"int",
-    "name":"dmap.containeritemid",
-    "description":"the id of an item in its container"
+    "code": "aeNV",
+    "description": "",
+    "name": "com.apple.itunes.norm-volume",
+    "type": "int"
   },
   {
-    "code":"mpco",
-    "type":"int",
-    "name":"dmap.parentcontainerid",
-    "description":""
+    "code": "aeSP",
+    "description": "",
+    "name": "com.apple.itunes.smart-playlist",
+    "type": "byte"
   },
   {
-    "code":"msts",
-    "type":"string",
-    "name":"dmap.statusstring",
-    "description":""
+    "code": "aply",
+    "description": "response to /databases/id/containers",
+    "name": "daap.databaseplaylists",
+    "type": "list"
   },
   {
-    "code":"mimc",
-    "type":"int",
-    "name":"dmap.itemcount",
-    "description":"number of items in a container"
+    "code": "apro",
+    "description": "",
+    "name": "daap.protocolversion",
+    "type": "version"
   },
   {
-    "code":"mrco",
-    "type":"int",
-    "name":"dmap.returnedcount",
-    "description":"number of items returned in a request"
+    "code": "apso",
+    "description": "response to /databases/id/containers/id/items",
+    "name": "daap.playlistsongs",
+    "type": "list"
   },
   {
-    "code":"mtco",
-    "type":"int",
-    "name":"dmap.specifiedtotalcount number of items in response to a request",
-    "description":""
+    "code": "arif",
+    "description": "",
+    "name": "daap.resolveinfo",
+    "type": "list"
   },
   {
-    "code":"mlcl",
-    "type":"list",
-    "name":"dmap.listing",
-    "description":"a list"
+    "code": "arsv",
+    "name": "daap.resolve",
+    "type": "list"
   },
   {
-    "code":"mlit",
-    "type":"list",
-    "name":"dmap.listingitem",
-    "description":"a single item in said list"
+    "code": "asal",
+    "description": "the song ones should be self exp.",
+    "name": "daap.songalbum",
+    "type": "string"
   },
   {
-    "code":"mbcl",
-    "type":"list",
-    "name":"dmap.bag",
-    "description":""
+    "code": "asar",
+    "description": "",
+    "name": "daap.songartist",
+    "type": "string"
   },
   {
-    "code":"mdcl",
-    "type":"list",
-    "name":"dmap.dictionary",
-    "description":""
+    "code": "asbr",
+    "description": "",
+    "name": "daap.songbitrate",
+    "type": "short"
   },
   {
-    "code":"msrv",
-    "type":"list",
-    "name":"dmap.serverinforesponse",
-    "description":"response to a /server-info"
+    "code": "asbt",
+    "description": "",
+    "name": "daap.songsbeatsperminute",
+    "type": "short"
   },
   {
-    "code":"msaud",
-    "type":"byte",
-    "name":"dmap.authenticationmethod",
-    "description":"(should be self explanatory)"
+    "code": "ascm",
+    "description": "",
+    "name": "daap.songcomment",
+    "type": "string"
   },
   {
-    "code":"mslr",
-    "type":"byte",
-    "name":"dmap.loginrequired",
-    "description":""
+    "code": "asco",
+    "description": "",
+    "name": "daap.songcompilation",
+    "type": "byte"
   },
   {
-    "code":"mpro",
-    "type":"version",
-    "name":"dmap.protocolversion",
-    "description":""
+    "code": "ascp",
+    "name": "daap.songcomposer",
+    "type": "string"
   },
   {
-    "code":"apro",
-    "type":"version",
-    "name":"daap.protocolversion",
-    "description":""
+    "code": "asda",
+    "description": "",
+    "name": "daap.songdateadded",
+    "type": "date"
   },
   {
-    "code":"msal",
-    "type":"byte",
-    "name":"dmap.supportsuatologout",
-    "description":""
+    "code": "asdb",
+    "description": "",
+    "name": "daap.songdisabled",
+    "type": "byte"
   },
   {
-    "code":"msup",
-    "type":"byte",
-    "name":"dmap.supportsupdate",
-    "description":""
+    "code": "asdc",
+    "description": "",
+    "name": "daap.songdisccount",
+    "type": "short"
   },
   {
-    "code":"mspi",
-    "type":"byte",
-    "name":"dmap.supportspersistentids",
-    "description":""
+    "code": "asdk",
+    "description": "",
+    "name": "daap.songdatakind",
+    "type": "byte"
   },
   {
-    "code":"msex",
-    "type":"byte",
-    "name":"dmap.supportsextensions",
-    "description":""
+    "code": "asdm",
+    "description": "",
+    "name": "daap.songdatemodified",
+    "type": "date"
   },
   {
-    "code":"msbr",
-    "type":"byte",
-    "name":"dmap.supportsbrowse",
-    "description":""
+    "code": "asdn",
+    "description": "",
+    "name": "daap.songdiscnumber",
+    "type": "short"
   },
   {
-    "code":"msqy",
-    "type":"byte",
-    "name":"dmap.supportsquery",
-    "description":""
+    "code": "asdt",
+    "description": "",
+    "name": "daap.songdescription",
+    "type": "string"
   },
   {
-    "code":"msix",
-    "type":"byte",
-    "name":"dmap.supportsindex",
-    "description":""
+    "code": "aseq",
+    "description": "",
+    "name": "daap.songeqpreset",
+    "type": "string"
   },
   {
-    "code":"msrs",
-    "type":"byte",
-    "name":"dmap.supportsresolve",
-    "description":""
+    "code": "asfm",
+    "description": "",
+    "name": "daap.songformat",
+    "type": "string"
   },
   {
-    "code":"mstm",
-    "type":"int",
-    "name":"dmap.timeoutinterval",
-    "description":""
+    "code": "asgn",
+    "description": "",
+    "name": "daap.songgenre",
+    "type": "string"
   },
   {
-    "code":"msdc",
-    "type":"int",
-    "name":"dmap.databasescount",
-    "description":""
+    "code": "asrv",
+    "description": "",
+    "name": "daap.songrelativevolume",
+    "type": "byte"
   },
   {
-    "code":"mccr",
-    "type":"list",
-    "name":"dmap.contentcodesresponse",
-    "description":"the response to the content-codes request"
+    "code": "assp",
+    "description": "(in milliseconds)",
+    "name": "daap.songstoptime ",
+    "type": "int"
   },
   {
-    "code":"mcnm",
-    "type":"int",
-    "name":"dmap.contentcodesnumber",
-    "description":"the four letter code"
+    "code": "assr",
+    "description": "",
+    "name": "daap.songsamplerate",
+    "type": "int"
   },
   {
-    "code":"mcna",
-    "type":"string",
-    "name":"dmap.contentcodesname",
-    "description":"the full name of the code"
+    "code": "asst",
+    "description": "(in milliseconds)",
+    "name": "daap.songstarttime ",
+    "type": "int"
   },
   {
-    "code":"mcty",
-    "type":"short",
-    "name":"dmap.contentcodestype",
-    "description":"the type of the code (see appendix b for type values)"
+    "code": "assz",
+    "description": "",
+    "name": "daap.songsize",
+    "type": "int"
   },
   {
-    "code":"mlog",
-    "type":"list",
-    "name":"dmap.loginresponse",
-    "description":"response to a /login"
+    "code": "astc",
+    "description": "",
+    "name": "daap.songtrackcount",
+    "type": "short"
   },
   {
-    "code":"mlid",
-    "type":"int",
-    "name":"dmap.sessionid",
-    "description":"the session id for the login session"
+    "code": "astm",
+    "description": "(in milliseconds)",
+    "name": "daap.songtime",
+    "type": "int"
   },
   {
-    "code":"mupd",
-    "type":"list",
-    "name":"dmap.updateresponse",
-    "description":"response to a /update"
+    "code": "astn",
+    "description": "",
+    "name": "daap.songtracknumber",
+    "type": "short"
   },
   {
-    "code":"msur",
-    "type":"int",
-    "name":"dmap.serverrevision",
-    "description":"revision to use for requests"
+    "code": "asul",
+    "description": "",
+    "name": "daap.songdataurl",
+    "type": "string"
   },
   {
-    "code":"muty",
-    "type":"byte",
-    "name":"dmap.updatetype",
-    "description":""
+    "code": "asur",
+    "description": "",
+    "name": "daap.songuserrating",
+    "type": "byte"
   },
   {
-    "code":"mudl",
-    "type":"list",
-    "name":"dmap.deletedidlisting",
-    "description":"used in updates?  (document soon)"
+    "code": "asyr",
+    "description": "",
+    "name": "daap.songyear",
+    "type": "short"
   },
   {
-    "code":"avdb",
-    "type":"list",
-    "name":"daap.serverdatabases",
-    "description":"response to a /databases"
+    "code": "avdb",
+    "description": "response to a /databases",
+    "name": "daap.serverdatabases",
+    "type": "list"
   },
   {
-    "code":"abro",
-    "type":"list",
-    "name":"daap.databasebrowse",
-    "description":""
+    "code": "mbcl",
+    "description": "",
+    "name": "dmap.bag",
+    "type": "list"
   },
   {
-    "code":"abal",
-    "type":"list",
-    "name":"daap.browsealbumlistung",
-    "description":"  "
+    "code": "mccr",
+    "description": "the response to the content-codes request",
+    "name": "dmap.contentcodesresponse",
+    "type": "list"
   },
   {
-    "code":"abar",
-    "type":"list",
-    "name":"daap.browseartistlisting   ",
-    "description":""
+    "code": "mcna",
+    "description": "the full name of the code",
+    "name": "dmap.contentcodesname",
+    "type": "string"
   },
   {
-    "code":"abcp",
-    "type":"list",
-    "name":"daap.browsecomposerlisting",
-    "description":""
+    "code": "mcnm",
+    "description": "the four letter code",
+    "name": "dmap.contentcodesnumber",
+    "type": "int"
   },
   {
-    "code":"abgn",
-    "type":"list",
-    "name":"daap.browsegenrelisting",
-    "description":""
+    "code": "mcon",
+    "description": "an arbitrary container",
+    "name": "dmap.container",
+    "type": "list"
   },
   {
-    "code":"adbs",
-    "type":"list",
-    "name":"daap.databasesongs",
-    "description":"repsoonse to a /databases/id/items"
+    "code": "mctc",
+    "name": "dmap.containercount",
+    "type": "int"
   },
   {
-    "code":"asal",
-    "type":"string",
-    "name":"daap.songalbum",
-    "description":"the song ones should be self exp."
+    "code": "mcti",
+    "description": "the id of an item in its container",
+    "name": "dmap.containeritemid",
+    "type": "int"
   },
   {
-    "code":"asar",
-    "type":"string",
-    "name":"daap.songartist",
-    "description":""
+    "code": "mcty",
+    "description": "the type of the code (see appendix b for type values)",
+    "name": "dmap.contentcodestype",
+    "type": "short"
   },
   {
-    "code":"asbt",
-    "type":"short",
-    "name":"daap.songsbeatsperminute",
-    "description":""
+    "code": "mdcl",
+    "description": "a dictionary entry",
+    "name": "dmap.dictionary",
+    "type": "list"
   },
   {
-    "code":"asbr",
-    "type":"short",
-    "name":"daap.songbitrate",
-    "description":""
+    "code": "mdcl",
+    "description": "",
+    "name": "dmap.dictionary",
+    "type": "list"
   },
   {
-    "code":"ascm",
-    "type":"string",
-    "name":"daap.songcomment",
-    "description":""
+    "code": "miid",
+    "description": "an item's id",
+    "name": "dmap.itemid",
+    "type": "int"
   },
   {
-    "code":"asco",
-    "type":"byte",
-    "name":"daap.songcompilation",
-    "description":""
+    "code": "mikd",
+    "description": "the kind of item.  So far, only '2' has been seen, an audio file?",
+    "name": "dmap.itemkind",
+    "type": "byte"
   },
   {
-    "code":"asda",
-    "type":"date",
-    "name":"daap.songdateadded",
-    "description":""
+    "code": "mimc",
+    "description": "number of items in a container",
+    "name": "dmap.itemcount",
+    "type": "int"
   },
   {
-    "code":"asdm",
-    "type":"date",
-    "name":"daap.songdatemodified",
-    "description":""
+    "code": "minm",
+    "description": "an items name",
+    "name": "dmap.itemname",
+    "type": "string"
   },
   {
-    "code":"asdc",
-    "type":"short",
-    "name":"daap.songdisccount",
-    "description":""
+    "code": "mlcl",
+    "description": "a list",
+    "name": "dmap.listing",
+    "type": "list"
   },
   {
-    "code":"asdn",
-    "type":"short",
-    "name":"daap.songdiscnumber",
-    "description":""
+    "code": "mlid",
+    "description": "the session id for the login session",
+    "name": "dmap.sessionid",
+    "type": "int"
   },
   {
-    "code":"asdb",
-    "type":"byte",
-    "name":"daap.songdisabled",
-    "description":""
+    "code": "mlit",
+    "description": "a single item in said list",
+    "name": "dmap.listingitem",
+    "type": "list"
   },
   {
-    "code":"aseq",
-    "type":"string",
-    "name":"daap.songeqpreset",
-    "description":""
+    "code": "mlog",
+    "description": "response to a /login",
+    "name": "dmap.loginresponse",
+    "type": "list"
   },
   {
-    "code":"asfm",
-    "type":"string",
-    "name":"daap.songformat",
-    "description":""
+    "code": "mpco",
+    "description": "",
+    "name": "dmap.parentcontainerid",
+    "type": "int"
   },
   {
-    "code":"asgn",
-    "type":"string",
-    "name":"daap.songgenre",
-    "description":""
+    "code": "mper",
+    "description": "a persistent id",
+    "name": "dmap.persistentid",
+    "type": "long"
   },
   {
-    "code":"asdt",
-    "type":"string",
-    "name":"daap.songdescription",
-    "description":""
+    "code": "mpro",
+    "description": "",
+    "name": "dmap.protocolversion",
+    "type": "version"
   },
   {
-    "code":"asrv",
-    "type":"byte",
-    "name":"daap.songrelativevolume",
-    "description":""
+    "code": "mrco",
+    "description": "number of items returned in a request",
+    "name": "dmap.returnedcount",
+    "type": "int"
   },
   {
-    "code":"assr",
-    "type":"int",
-    "name":"daap.songsamplerate",
-    "description":""
+    "code": "msal",
+    "description": "",
+    "name": "dmap.supportsuatologout",
+    "type": "byte"
   },
   {
-    "code":"assz",
-    "type":"int",
-    "name":"daap.songsize",
-    "description":""
+    "code": "msau",
+    "name": "dmap.authenticationmethod",
+    "type": "byte"
   },
   {
-    "code":"asst",
-    "type":"int",
-    "name":"daap.songstarttime ",
-    "description":"(in milliseconds)"
+    "code": "msaud",
+    "description": "(should be self explanatory)",
+    "name": "dmap.authenticationmethod",
+    "type": "byte"
   },
   {
-    "code":"assp",
-    "type":"int",
-    "name":"daap.songstoptime ",
-    "description":"(in milliseconds)"
+    "code": "msbr",
+    "description": "",
+    "name": "dmap.supportsbrowse",
+    "type": "byte"
   },
   {
-    "code":"astm",
-    "type":"int",
-    "name":"daap.songtime",
-    "description":"(in milliseconds)"
+    "code": "msdc",
+    "description": "",
+    "name": "dmap.databasescount",
+    "type": "int"
   },
   {
-    "code":"astc",
-    "type":"short",
-    "name":"daap.songtrackcount",
-    "description":""
+    "code": "msex",
+    "description": "",
+    "name": "dmap.supportsextensions",
+    "type": "byte"
   },
   {
-    "code":"astn",
-    "type":"short",
-    "name":"daap.songtracknumber",
-    "description":""
+    "code": "msix",
+    "description": "",
+    "name": "dmap.supportsindex",
+    "type": "byte"
   },
   {
-    "code":"asur",
-    "type":"byte",
-    "name":"daap.songuserrating",
-    "description":""
+    "code": "mslr",
+    "description": "",
+    "name": "dmap.loginrequired",
+    "type": "byte"
   },
   {
-    "code":"asyr",
-    "type":"short",
-    "name":"daap.songyear",
-    "description":""
+    "code": "mspi",
+    "description": "",
+    "name": "dmap.supportspersistentids",
+    "type": "byte"
   },
   {
-    "code":"asdk",
-    "type":"byte",
-    "name":"daap.songdatakind",
-    "description":""
+    "code": "msqy",
+    "description": "",
+    "name": "dmap.supportsquery",
+    "type": "byte"
   },
   {
-    "code":"asul",
-    "type":"string",
-    "name":"daap.songdataurl",
-    "description":""
+    "code": "msrs",
+    "description": "",
+    "name": "dmap.supportsresolve",
+    "type": "byte"
   },
   {
-    "code":"aply",
-    "type":"list",
-    "name":"daap.databaseplaylists",
-    "description":"response to /databases/id/containers"
+    "code": "msrv",
+    "description": "response to a /server-info",
+    "name": "dmap.serverinforesponse",
+    "type": "list"
   },
   {
-    "code":"abpl",
-    "type":"byte",
-    "name":"daap.baseplaylist",
-    "description":""
+    "code": "mstm",
+    "description": "",
+    "name": "dmap.timeoutinterval",
+    "type": "int"
   },
   {
-    "code":"apso",
-    "type":"list",
-    "name":"daap.playlistsongs",
-    "description":"response to /databases/id/containers/id/items"
+    "code": "msts",
+    "description": "",
+    "name": "dmap.statusstring",
+    "type": "string"
   },
   {
-    "code":"prsv",
-    "type":"list",
-    "name":"daap.resolve",
-    "description":""
+    "code": "mstt",
+    "description": "the response status code, these appear to be http status codes, e.g. 200",
+    "name": "dmap.status",
+    "type": "int"
   },
   {
-    "code":"arif",
-    "type":"list",
-    "name":"daap.resolveinfo",
-    "description":""
+    "code": "msup",
+    "description": "",
+    "name": "dmap.supportsupdate",
+    "type": "byte"
   },
   {
-    "code":"aeNV",
-    "type":"int",
-    "name":"com.apple.itunes.norm-volume",
-    "description":""
+    "code": "msur",
+    "description": "revision to use for requests",
+    "name": "dmap.serverrevision",
+    "type": "int"
   },
   {
-    "code":"aeSP",
-    "type":"byte",
-    "name":"com.apple.itunes.smart-playlist",
-    "description":""
+    "code": "mtco",
+    "description": "",
+    "name": "dmap.specifiedtotalcount number of items in response to a request",
+    "type": "int"
+  },
+  {
+    "code": "mudl",
+    "description": "used in updates?  (document soon)",
+    "name": "dmap.deletedidlisting",
+    "type": "list"
+  },
+  {
+    "code": "mupd",
+    "description": "response to a /update",
+    "name": "dmap.updateresponse",
+    "type": "list"
+  },
+  {
+    "code": "musr",
+    "name": "dmap.serverrevision",
+    "type": "int"
+  },
+  {
+    "code": "muty",
+    "description": "",
+    "name": "dmap.updatetype",
+    "type": "byte"
+  },
+  {
+    "code": "prsv",
+    "description": "",
+    "name": "daap.resolve",
+    "type": "list"
   }
 ]
