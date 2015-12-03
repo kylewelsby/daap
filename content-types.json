@@ -42,15 +42,219 @@
     "type": "list"
   },
   {
+    "code": "aeCR",
+    "description": "",
+    "name": "com.apple.itunes.content-rating",
+    "type": "string"
+  },
+  {
+    "code": "aeCS",
+    "description": "",
+    "name": "com.apple.itunes.artworkchecksum",
+    "type": "int"
+  },
+  {
+    "code": "aeDL",
+    "description": "",
+    "name": "com.apple.itunes.drm-downloader-user-id",
+    "type": "long"
+  },
+  {
+    "code": "aeDP",
+    "description": "",
+    "name": "com.apple.itunes.drm-platform-id",
+    "type": "int"
+  },
+  {
+    "code": "aeDR",
+    "description": "",
+    "name": "com.apple.itunes.drm-user-id",
+    "type": "long"
+  },
+  {
+    "code": "aeDV",
+    "description": "",
+    "name": "com.apple.itunes.drm-versions",
+    "type": "int"
+  },
+  {
+    "code": "aeEN",
+    "description": "",
+    "name": "com.apple.itunes.episode-num-str",
+    "type": "int"
+  },
+  {
+    "code": "aeES",
+    "description": "",
+    "name": "com.apple.itunes.episode-sort",
+    "type": "int"
+  },
+  {
+    "code": "aeFA",
+    "description": "",
+    "name": "com.apple.itunes.drm-family-id",
+    "type": "long"
+  },
+  {
+    "code": "aeGD",
+    "description": "",
+    "name": "com.apple.itunes.gapless-enc-dr",
+    "type": "int"
+  },
+  {
+    "code": "aeGE",
+    "description": "",
+    "name": "com.apple.itunes.gapless-enc-del",
+    "type": "int"
+  },
+  {
+    "code": "aeGH",
+    "description": "",
+    "name": "com.apple.itunes.gapless-heur",
+    "type": "int"
+  },
+  {
+    "code": "aeGR",
+    "description": "",
+    "name": "com.apple.itunes.gapless-resy",
+    "type": "long"
+  },
+  {
+    "code": "aeGU",
+    "description": "",
+    "name": "com.apple.itunes.gapless-dur",
+    "type": "long"
+  },
+  {
+    "code": "aeGs",
+    "description": "",
+    "name": "com.apple.itunes.can-be-genius-seed",
+    "type": "byte"
+  },
+  {
+    "code": "aeHD",
+    "description": "",
+    "name": "com.apple.itunes.is-hd-video",
+    "type": "byte"
+  },
+  {
+    "code": "aeHV",
+    "description": "",
+    "name": "com.apple.itunes.has-video",
+    "type": "byte"
+  },
+  {
+    "code": "aeK1",
+    "description": "",
+    "name": "com.apple.itunes.drm-key1-id",
+    "type": "long"
+  },
+  {
+    "code": "aeK2",
+    "description": "",
+    "name": "com.apple.itunes.drm-key2-id",
+    "type": "long"
+  },
+  {
+    "code": "aeMK",
+    "description": "",
+    "name": "com.apple.itunes.mediakind",
+    "type": "byte"
+  },
+  {
+    "code": "aeMX",
+    "description": "",
+    "name": "com.apple.itunes.movie-info-xml",
+    "type": "string"
+  },
+  {
+    "code": "aeMk",
+    "description": "",
+    "name": "com.apple.itunes.extended-media-kind",
+    "type": "byte"
+  },
+  {
+    "code": "aeND",
+    "description": "",
+    "name": "com.apple.itunes.non-drm-user-id",
+    "type": "long"
+  },
+  {
     "code": "aeNV",
     "description": "",
     "name": "com.apple.itunes.norm-volume",
     "type": "int"
   },
   {
+    "code": "aePC",
+    "description": "",
+    "name": "com.apple.itunes.is-podcast",
+    "type": "byte"
+  },
+  {
+    "code": "aePP",
+    "description": "",
+    "name": "com.apple.itunes.is-podcast-playlist",
+    "type": "byte"
+  },
+  {
+    "code": "aePS",
+    "description": "",
+    "name": "com.apple.itunes.special-playlist",
+    "type": "byte"
+  },
+  {
+    "code": "aeSE",
+    "description": "",
+    "name": "com.apple.itunes.store-pers-id",
+    "type": "long"
+  },
+  {
+    "code": "aeSG",
+    "description": "",
+    "name": "com.apple.itunes.saved-genius",
+    "type": "byte"
+  },
+  {
+    "code": "aeSN",
+    "description": "",
+    "name": "com.apple.itunes.series-name",
+    "type": "string"
+  },
+  {
     "code": "aeSP",
     "description": "",
     "name": "com.apple.itunes.smart-playlist",
+    "type": "byte"
+  },
+  {
+    "code": "aeSU",
+    "description": "",
+    "name": "com.apple.itunes.season-num",
+    "type": "int"
+  },
+  {
+    "code": "aeXD",
+    "description": "",
+    "name": "com.apple.itunes.xid",
+    "type": "string"
+  },
+  {
+    "code": "aels",
+    "description": "",
+    "name": "com.apple.itunes.liked-state",
+    "type": "byte"
+  },
+  {
+    "code": "agrp",
+    "description": "",
+    "name": "daap.songgrouping",
+    "type": "string"
+  },
+  {
+    "code": "ajal",
+    "description": "",
+    "name": "com.apple.itunes.store.album-liked-state",
     "type": "byte"
   },
   {
@@ -79,8 +283,27 @@
   },
   {
     "code": "arsv",
+    "description": "",
     "name": "daap.resolve",
     "type": "list"
+  },
+  {
+    "code": "asaa",
+    "description": "",
+    "name": "daap.songalbumartist",
+    "type": "string"
+  },
+  {
+    "code": "asac",
+    "description": "",
+    "name": "daap.songartworkcount",
+    "type": "short"
+  },
+  {
+    "code": "asai",
+    "description": "",
+    "name": "daap.songalbumid",
+    "type": "long"
   },
   {
     "code": "asal",
@@ -95,6 +318,18 @@
     "type": "string"
   },
   {
+    "code": "asas",
+    "description": "",
+    "name": "daap.songalbumuserratingstatus",
+    "type": "byte"
+  },
+  {
+    "code": "asbk",
+    "description": "",
+    "name": "daap.bookmarkable",
+    "type": "byte"
+  },
+  {
     "code": "asbr",
     "description": "",
     "name": "daap.songbitrate",
@@ -107,9 +342,21 @@
     "type": "short"
   },
   {
+    "code": "ascd",
+    "description": "",
+    "name": "daap.songcodectype",
+    "type": "int"
+  },
+  {
     "code": "ascm",
     "description": "",
     "name": "daap.songcomment",
+    "type": "string"
+  },
+  {
+    "code": "ascn",
+    "description": "",
+    "name": "daap.songcontentdescription",
     "type": "string"
   },
   {
@@ -121,6 +368,24 @@
   {
     "code": "ascp",
     "name": "daap.songcomposer",
+    "type": "string"
+  },
+  {
+    "code": "ascr",
+    "description": "",
+    "name": "daap.songcontentrating",
+    "type": "byte"
+  },
+  {
+    "code": "ascs",
+    "description": "",
+    "name": "daap.songcodecsubtype",
+    "type": "int"
+  },
+  {
+    "code": "asct",
+    "description": "",
+    "name": "daap.songcategory",
     "type": "string"
   },
   {
@@ -166,10 +431,22 @@
     "type": "string"
   },
   {
+    "code": "ased",
+    "description": "",
+    "name": "daap.songextradata",
+    "type": "short"
+  },
+  {
     "code": "aseq",
     "description": "",
     "name": "daap.songeqpreset",
     "type": "string"
+  },
+  {
+    "code": "ases",
+    "description": "",
+    "name": "daap.songexcludefromshuffle",
+    "type": "byte"
   },
   {
     "code": "asfm",
@@ -184,10 +461,100 @@
     "type": "string"
   },
   {
+    "code": "asgp",
+    "description": "",
+    "name": "daap.songgapless",
+    "type": "byte"
+  },
+  {
+    "code": "ashp",
+    "description": "",
+    "name": "daap.songhasbeenplayed",
+    "type": "byte"
+  },
+  {
+    "code": "askd",
+    "description": "",
+    "name": "daap.songlastskipdate",
+    "type": "date"
+  },
+  {
+    "code": "askp",
+    "description": "",
+    "name": "daap.songuserskipcount",
+    "type": "int"
+  },
+  {
+    "code": "aslr",
+    "description": "",
+    "name": "daap.songalbumuserrating",
+    "type": "byte"
+  },
+  {
+    "code": "asls",
+    "description": "",
+    "name": "daap.songlongsize",
+    "type": "long"
+  },
+  {
+    "code": "aspc",
+    "description": "",
+    "name": "daap.songuserplaycount",
+    "type": "int"
+  },
+  {
+    "code": "aspl",
+    "description": "",
+    "name": "daap.songdateplayed",
+    "type": "date"
+  },
+  {
+    "code": "aspu",
+    "description": "",
+    "name": "daap.songpodcasturl",
+    "type": "string"
+  },
+  {
+    "code": "asri",
+    "description": "",
+    "name": "daap.songartistid",
+    "type": "long"
+  },
+  {
+    "code": "asrs",
+    "description": "",
+    "name": "daap.songuserratingstatus",
+    "type": "byte"
+  },
+  {
     "code": "asrv",
     "description": "",
     "name": "daap.songrelativevolume",
     "type": "byte"
+  },
+  {
+    "code": "assa",
+    "description": "",
+    "name": "daap.sortartist",
+    "type": "string"
+  },
+  {
+    "code": "assc",
+    "description": "",
+    "name": "daap.sortcomposer",
+    "type": "string"
+  },
+  {
+    "code": "assl",
+    "description": "",
+    "name": "daap.sortalbumartist",
+    "type": "string"
+  },
+  {
+    "code": "assn",
+    "description": "",
+    "name": "daap.sortname",
+    "type": "string"
   },
   {
     "code": "assp",
@@ -202,10 +569,22 @@
     "type": "int"
   },
   {
+    "code": "asss",
+    "description": "",
+    "name": "daap.sortseriesname",
+    "type": "string"
+  },
+  {
     "code": "asst",
     "description": "(in milliseconds)",
     "name": "daap.songstarttime ",
     "type": "int"
+  },
+  {
+    "code": "assu",
+    "description": "",
+    "name": "daap.sortalbum",
+    "type": "string"
   },
   {
     "code": "assz",
@@ -304,15 +683,39 @@
   },
   {
     "code": "mdcl",
-    "description": "a dictionary entry",
+    "description": "",
     "name": "dmap.dictionary",
     "type": "list"
   },
   {
     "code": "mdcl",
-    "description": "",
+    "description": "a dictionary entry",
     "name": "dmap.dictionary",
     "type": "list"
+  },
+  {
+    "code": "mdst",
+    "description": "",
+    "name": "dmap.downloadstatus",
+    "type": "byte"
+  },
+  {
+    "code": "meia",
+    "description": "",
+    "name": "dmap.itemdateadded",
+    "type": "date"
+  },
+  {
+    "code": "meip",
+    "description": "",
+    "name": "dmap.itemdateplayed",
+    "type": "date"
+  },
+  {
+    "code": "mext",
+    "description": "",
+    "name": "dmap.objectextradata",
+    "type": "short"
   },
   {
     "code": "miid",
