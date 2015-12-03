@@ -1,5 +1,10 @@
 # Change Log
 
+## v1.0.3
+
+* Add many more missing content types
+* Fix dramatically broken encoder/decoder 
+
 ## v1.0.2
 
 * [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](http://standardjs.com/)

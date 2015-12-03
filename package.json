@@ -1,6 +1,6 @@
 {
   "name": "node-daap",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Encoder and Decoder for Digital Audio Access Protocol.",
   "main": "index.js",
   "directories": {
