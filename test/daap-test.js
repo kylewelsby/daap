@@ -7,13 +7,14 @@ describe('DAAP', function () {
     var data = {
       asal: 'Thriller',
       asar: 'Michael Jackson',
-      asbr: '192', // bitrate
+      asbr: 192, // bitrate
       asbt: '140', // BPM
       ascm: 'Most popular Michael Jackson song of all time',
-      asco: true,
+      asco: 1,
       ascp: 'Michael Jackson, Quincy Jones',
       asda: '1445428778', // added date
-      asdb: false,
+      ascd: 1836082535,
+      asdb: 0,
       asdc: '01',
       asdn: '01',
       asgn: 'R&B',
@@ -26,6 +27,7 @@ describe('DAAP', function () {
       minm: 'Billie Jean'
     }
     var encodedList = []
+
     Object.keys(data).forEach(function (key) {
       encodedList.push(daap.encode(key, data[key]))
     })

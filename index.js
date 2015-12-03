@@ -8,25 +8,68 @@ function getContentType (itemType) {
   })[0]
 }
 
-function decode (buffer) {
-  var output, itemType, itemLength
+function getULongAt (arr, offs) {
+  return (arr[offs + 0] << 56) +
+  (arr[offs + 1] << 48) +
+  (arr[offs + 2] << 34) +
+  (arr[offs + 3] << 24) +
+  (arr[offs + 4] << 16) +
+  (arr[offs + 5] << 8) +
+  arr[offs + 6] >>> 0
+}
+function getUIntAt (arr, offs) {
+  return (arr[offs + 0] << 24) +
+  (arr[offs + 1] << 16) +
+  (arr[offs + 2] << 8) +
+  arr[offs + 3] >>> 0
+}
+
+function decode (buffer, fullNames) {
+  var output, itemType, itemLength, contentType, data, parsedData, outputKey
+  if (!fullNames) {
+    fullNames = false
+  }
   output = {}
 
   for (var i = 8; i < buffer.length;) {
     itemType = buffer.slice(i, i + 4).toString()
+    outputKey = itemType.toString()
     itemLength = buffer.slice(i + 4, i + 8).readUInt32BE(0)
-    var contentType = getContentType(itemType)
-    if (itemLength !== 0) {
-      var data = buffer.slice(i + 8, i + 8 + itemLength)
-      if (contentType.type === 'byte') {
-        output[itemType] = data.toString() === 'true'
-      } else {
-        output[itemType] = data.toString()
+    contentType = getContentType(itemType)
+    if (contentType) {
+      parsedData = null
+
+      if (itemLength !== 0) {
+        data = buffer.slice(i + 8, i + 8 + itemLength)
+        parsedData = null
+
+        try {
+          if (contentType.type === 'byte') {
+            parsedData = data.readUInt8(0)
+          } else if (contentType.type === 'date') {
+            parsedData = data.readIntBE(0, 4)
+          } else if (contentType.type === 'short') {
+            parsedData = data.readUInt16BE(0)
+          } else if (contentType.type === 'int') {
+            parsedData = data.readUInt32BE(0)
+          } else if (contentType.type === 'long') {
+            parsedData = data.readIntBE(0, 8)
+          } else {
+            parsedData = data.toString()
+          }
+        } catch (e) {
+          console.log('error on %s', itemType)
+          console.error(e)
+        }
+      }
+      if (fullNames) {
+        outputKey = contentType.name
+      }
+      if (parsedData !== null) {
+        output[outputKey] = parsedData
       }
     } else {
-      if (contentType.type === 'byte') {
-        output[itemType] = false
-      }
+      console.error('Node-DAPP: Unexpected ContentType: %s', itemType)
     }
 
     i += 8 + itemLength
@@ -36,10 +79,26 @@ function decode (buffer) {
 
 function encode (field, value) {
   value = value.toString()
+  var contentType = getContentType(field)
   var buf = new Buffer(field.length + value.length + 4)
-  buf.write(field, 0, field.length, 'ascii')
+
+  buf.write(field, 0, field.length)
   buf.writeUInt32BE(value.length, field.length)
-  buf.write(value, field.length + 4, value.length, 'ascii')
+
+  var valueOffset = field.length + 4
+  if (contentType.type === 'byte') {
+    buf.writeUInt8(value, valueOffset)
+  } else if (contentType.type === 'short') {
+    buf.writeUInt16BE(value, valueOffset)
+  } else if (contentType.type === 'int') {
+    buf.writeUInt32BE(value, valueOffset)
+  } else if (contentType.type === 'long') {
+    buf.writeIntBE(value, valueOffset, 8)
+  } else if (contentType.type === 'date') {
+    buf.writeIntBE(value, valueOffset, 4)
+  } else {
+    buf.write(value, valueOffset, value.length)
+  }
   return buf
 }
 
@@ -51,7 +110,7 @@ function encodeList (field) {
   }
   var value = Buffer.concat(values)
   var buf = new Buffer(field.length + 4)
-  buf.write(field, 0, field.length, 'ascii')
+  buf.write(field, 0, field.length)
   buf.writeUInt32BE(value.length, field.length)
   return Buffer.concat([buf, value])
 }
